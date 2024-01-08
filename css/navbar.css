@@ -1,6 +1,27 @@
 .nav-enlace{
     display: inline-block;
-    background: #b8f2f2;
+    background: #80BCBD;
     color: black;
     padding: 10px 30px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: #b8f2f2;
+}
+
+nav{
+    background: #092635;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 3px 0;
+    }
 }
