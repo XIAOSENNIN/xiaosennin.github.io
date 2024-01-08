@@ -6,14 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/navbar.css">
 </head>
-
 <body>
     <nav>
-        <a href="#" class="nav-enlace">Inicio</a>
-        <a href="#" class="nav-enlace">Mostrar</a>
-        <a href="#" class="nav-enlace">Servicios</a>
-        <a href="#" class="nav-enlace">Contacto</a>
+        <button class="nav-boton" onclick="mostrar()">Menu</button>
+        <a href="#" class="nav-enlace ocultar-columnas">Inicio</a>
+        <a href="#" class="nav-enlace ocultar-columnas">Mostrar</a>
+        <a href="#" class="nav-enlace ocultar-columnas">Servicios</a>
+        <a href="#" class="nav-enlace ocultar-columnas">Contacto</a>
     </nav>
+    <script>
+        function mostrar() {
+            let menus = document.getElementsByClassName('nav-enlace');
+            for (let index = 0; index < menus.length; index++) {
+                menus[index].classList.toggle('ocultar-columnas');
+            }
+        }
+    </script>
 </body>
-
 </html>
